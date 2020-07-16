@@ -98,7 +98,7 @@ class NurseryTableViewController: UITableViewController {
         if let addVC = segue.destination as? AddBabyViewController {
            addVC.previousVC = self
          }
-         if let completeVC = segue.destination as? ProfileTableViewController {
+         if let completeVC = segue.destination as? ProfileViewController {
             if let newPlant = sender as? plantBaby {
               completeVC.selectedPlantBaby = newPlant
               completeVC.previousVC = self
