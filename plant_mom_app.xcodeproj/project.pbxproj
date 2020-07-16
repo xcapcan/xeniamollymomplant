@@ -17,6 +17,7 @@
 		257B72B824BE4D2500E4317B /* plant_mom_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257B72B724BE4D2500E4317B /* plant_mom_appUITests.swift */; };
 		25D73E0C24C017A2009FE627 /* NurseryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D73E0B24C017A2009FE627 /* NurseryTableViewController.swift */; };
 		25D73E0E24C0181F009FE627 /* plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D73E0D24C0181F009FE627 /* plant.swift */; };
+		25D73E1024C02AB1009FE627 /* AddBabyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D73E0F24C02AB1009FE627 /* AddBabyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		257B72B924BE4D2500E4317B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25D73E0B24C017A2009FE627 /* NurseryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseryTableViewController.swift; sourceTree = "<group>"; };
 		25D73E0D24C0181F009FE627 /* plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plant.swift; sourceTree = "<group>"; };
+		25D73E0F24C02AB1009FE627 /* AddBabyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBabyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				257B72A324BE4D2400E4317B /* Info.plist */,
 				257B729B24BE4D1F00E4317B /* plant_mom_app.xcdatamodeld */,
 				25D73E0D24C0181F009FE627 /* plant.swift */,
+				25D73E0F24C02AB1009FE627 /* AddBabyViewController.swift */,
 			);
 			path = plant_mom_app;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				257B729D24BE4D1F00E4317B /* plant_mom_app.xcdatamodeld in Sources */,
 				25D73E0E24C0181F009FE627 /* plant.swift in Sources */,
+				25D73E1024C02AB1009FE627 /* AddBabyViewController.swift in Sources */,
 				25D73E0C24C017A2009FE627 /* NurseryTableViewController.swift in Sources */,
 				257B729324BE4D1F00E4317B /* AppDelegate.swift in Sources */,
 				257B729524BE4D1F00E4317B /* SceneDelegate.swift in Sources */,
