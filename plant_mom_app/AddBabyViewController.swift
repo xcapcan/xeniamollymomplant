@@ -32,7 +32,8 @@ class AddBabyViewController: UIViewController {
         }
         
         previousVC.newPlants.append(newBaby)
-        previousVC.tableView.reloadData() 
+        previousVC.tableView.reloadData()
+        navigationController?.popViewController(animated: true)
     }
     
     /*

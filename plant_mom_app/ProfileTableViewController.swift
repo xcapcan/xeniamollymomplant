@@ -1,59 +1,51 @@
 //
-//  ToDoTableViewController.swift
+//  ProfileTableViewController.swift
 //  plant_mom_app
 //
-//  Created by Olga Capcan on 7/15/20.
+//  Created by Molly Dorgan on 7/16/20.
 //  Copyright © 2020 Xenia Capcan. All rights reserved.
 //
 
 import UIKit
 
-class NurseryTableViewController: UITableViewController {
+class ProfileTableViewController: UITableViewController {
 
-    var newPlants : [plantBaby] = []
+    @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        newPlants = addNewPlant()
+        titleLabel.text = selectedPlantBaby.name
+    }
+    
+    @IBAction func completeTapped(_ sender: Any) {
     }
 
-   func addNewPlant() -> [plantBaby] {
+    // MARK: - Table view data source
 
-     let succulent = plantBaby()
-     succulent.name = "Sonoma"
-     succulent.active = true
-
-     let sunflower = plantBaby()
-     sunflower.name = "Heather"
-     // important is set to false by default
-
-     return [succulent, sunflower]
-   }
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newPlants.count
+        // #warning Incomplete implementation, return the number of rows
+        return 0
     }
-
     
+    var previousVC = NurseryTableViewController()
+    var selectedPlantBaby = plantBaby()
+}
+
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-         let newPlant = newPlants[indexPath.row]
-        
-        if newPlant.active {
-          cell.textLabel?.text = "🌱" + newPlant.name
-        } else {
-          cell.textLabel?.text = newPlant.name
-        }
-        
+        // Configure the cell...
+
         return cell
     }
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -90,30 +82,14 @@ class NurseryTableViewController: UITableViewController {
     }
     */
 
- 
+    /*
+    // MARK: - Navigation
 
-
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if let addVC = segue.destination as? AddBabyViewController {
-           addVC.previousVC = self
-         }
-         if let completeVC = segue.destination as? ProfileTableViewController {
-            if let newPlant = sender as? plantBaby {
-              completeVC.selectedPlantBaby = newPlant
-              completeVC.previousVC = self
-            }
-          }
-        
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    */
 
-      // this gives us a single ToDo
-      let newPlant = newPlants[indexPath.row]
 
-      performSegue(withIdentifier: "moveToProfile", sender: newPlant)
-    }
-    
-
-}

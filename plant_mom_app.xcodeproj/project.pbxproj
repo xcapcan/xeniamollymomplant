@@ -18,6 +18,7 @@
 		25D73E0C24C017A2009FE627 /* NurseryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D73E0B24C017A2009FE627 /* NurseryTableViewController.swift */; };
 		25D73E0E24C0181F009FE627 /* plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D73E0D24C0181F009FE627 /* plant.swift */; };
 		25D73E1024C02AB1009FE627 /* AddBabyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D73E0F24C02AB1009FE627 /* AddBabyViewController.swift */; };
+		335D8E4D24C0C5B1008D4362 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335D8E4C24C0C5B1008D4362 /* ProfileTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		25D73E0B24C017A2009FE627 /* NurseryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseryTableViewController.swift; sourceTree = "<group>"; };
 		25D73E0D24C0181F009FE627 /* plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plant.swift; sourceTree = "<group>"; };
 		25D73E0F24C02AB1009FE627 /* AddBabyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBabyViewController.swift; sourceTree = "<group>"; };
+		335D8E4C24C0C5B1008D4362 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				257B729224BE4D1F00E4317B /* AppDelegate.swift */,
 				257B729424BE4D1F00E4317B /* SceneDelegate.swift */,
 				257B729824BE4D1F00E4317B /* Main.storyboard */,
+				335D8E4C24C0C5B1008D4362 /* ProfileTableViewController.swift */,
 				257B729E24BE4D2400E4317B /* Assets.xcassets */,
 				25D73E0B24C017A2009FE627 /* NurseryTableViewController.swift */,
 				257B72A024BE4D2400E4317B /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				335D8E4D24C0C5B1008D4362 /* ProfileTableViewController.swift in Sources */,
 				257B729D24BE4D1F00E4317B /* plant_mom_app.xcdatamodeld in Sources */,
 				25D73E0E24C0181F009FE627 /* plant.swift in Sources */,
 				25D73E1024C02AB1009FE627 /* AddBabyViewController.swift in Sources */,
