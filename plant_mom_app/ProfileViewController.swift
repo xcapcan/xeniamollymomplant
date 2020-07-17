@@ -12,6 +12,19 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var Plant: UILabel!
     
+    @IBOutlet weak var speciesLabel: UILabel!
+    
+    @IBOutlet weak var ageLabel: UILabel!
+    
+    
+    @IBAction func waterNotif(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Nourish your baby", message: "Don't forget to water in 1 day!", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Got it, hank you!", style: .default))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -23,15 +36,15 @@ class ProfileViewController: UIViewController {
 
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+       if let addVC = segue.destination as? PickerViewController {
+                 addVC.previousVC = self
+               }
+        
+        
     }
-    */
+  
     
         
         var previousVC = NurseryTableViewController()
